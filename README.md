@@ -4,6 +4,16 @@ modèles Quiz Django
 **Les modèles**
 
   ```
+  class User (models.Model):
+      nom = models.CharField( max_length = 255 )
+      prenom = models.CharField( max_length = 255 )
+      sexe = models.CharField( max_length = 2 )
+      age = models.IntegerField( max_length = 2 )
+      image = models.ImageField( blank = True, upload_to = 'post' )
+      date_add = models.DateTimeField ( auto_now_add = True )
+      date_update = models.DateTimeField ( auto_now = True )
+      statut = models.BooleanField ( default = True )
+  
   class Quiz (models.Model):
       description = models.TextField ()
       date_add = models.DateTimeField ( auto_now_add = True )
