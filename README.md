@@ -3,7 +3,8 @@ modèles Quiz Django
 
 **Les modèles**
 
-  ```class Quiz (models.Model):
+  ```
+  class Quiz (models.Model):
       description = models.TextField ()
       date_add = models.DateTimeField ( auto_now_add = True )
       date_update = models.DateTimeField ( auto_now = True )
