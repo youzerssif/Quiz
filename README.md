@@ -31,7 +31,8 @@ modèles Quiz Django
       date_update = models.DateTimeField ( auto_now = True )
       statut = models.BooleanField ( default = True )
       question_id = models.ForeignKey('Question', on_delete = models.CASCADE, related_name = 'question_resultat',)
-      ```
+      
+  ```
       
 
     
